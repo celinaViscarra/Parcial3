@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class CountActivity extends AppCompatActivity {
     EditText idAutorTxt;
-    TextView cantidadTxt;
+    TextView countTxt;
     //URL.
     private final String urlLocal ="http://192.168.1.8/av12013/ws_count.php";
 
@@ -22,7 +22,7 @@ public class CountActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
-        cantidadTxt = (TextView) findViewById(R.id.editText_cantidad);
+        countTxt = (TextView) findViewById(R.id.textView_count);
     }
 
     public void consultarCount(View v) {
@@ -30,6 +30,6 @@ public class CountActivity extends AppCompatActivity {
         String url = urlLocal + "?idautor=" + id;
         String conteo = ControlWS.obtenerPeticion(url, this);
         Log.v("Respuesta", conteo);
-        cantidadTxt.setText("Conteo: " + ControlWS.obtenerCountJSON(conteo, this));
+        countTxt.setText("Conteo: " + ControlWS.obtenerCountJSON(conteo, this));
     }
 }

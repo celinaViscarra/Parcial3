@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class PromedioActivity extends AppCompatActivity {
     EditText idAutorTxt;
-    TextView cantidadTxt;
+    TextView promedioTxt;
     //URL.
     private final String urlLocal = "http://192.168.1.8/av12013/ws_promedio.php";
 
@@ -22,7 +22,7 @@ public class PromedioActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
-        cantidadTxt = (TextView) findViewById(R.id.editText_cantidad);
+        promedioTxt = (TextView) findViewById(R.id.textView_promedio);
     }
 
     public void consultarPromedio(View v) {
@@ -30,6 +30,6 @@ public class PromedioActivity extends AppCompatActivity {
         String url = urlLocal + "?idautor=" + id;
         String conteo = ControlWS.obtenerPeticion(url, this);
         Log.v("Respuesta", conteo);
-        cantidadTxt.setText("Promedio: " + ControlWS.obtenerPromedioJSON(conteo, this));
+        promedioTxt.setText("Promedio: " + ControlWS.obtenerPromedioJSON(conteo, this));
     }
 }

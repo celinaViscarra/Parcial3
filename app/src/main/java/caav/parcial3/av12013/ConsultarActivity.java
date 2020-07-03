@@ -22,7 +22,7 @@ public class ConsultarActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
         codLibroTxt = (EditText) findViewById(R.id.editText_libro);
-        cantidadTxt = (TextView) findViewById(R.id.editText_cantidad);
+        cantidadTxt = (TextView) findViewById(R.id.textView_consultar);
     }
 
     public void consultar(View v){

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class SumatoriaActivity extends AppCompatActivity {
     EditText idAutorTxt;
-    TextView cantidadTxt;
+    TextView sumatoriaTxt;
     //URL.
     private final String urlLocal = "http://192.168.1.8/av12013/ws_sum.php";
     @Override
@@ -21,7 +21,7 @@ public class SumatoriaActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
-        cantidadTxt = (TextView) findViewById(R.id.editText_cantidad);
+        sumatoriaTxt = (TextView) findViewById(R.id.textView_sumatoria);
     }
 
     public void consultarSumatoria(View v) {
@@ -29,6 +29,6 @@ public class SumatoriaActivity extends AppCompatActivity {
         String url = urlLocal + "?idautor=" + id;
         String conteo = ControlWS.obtenerPeticion(url, this);
         Log.v("Respuesta", conteo);
-        cantidadTxt.setText("Sumatoria: " + ControlWS.obtenerSumatoriaJSON(conteo, this));
+        sumatoriaTxt.setText("Sumatoria: " + ControlWS.obtenerSumatoriaJSON(conteo, this));
     }
 }
