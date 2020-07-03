@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Parcial3 - AV12013</string>
+
+    <!-- CRUD -->
+    <string name="ingresar">Ingresar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="consultar">Consultar</string>
+    <string name="eliminar">Eliminar</string>
+
+    <!-- CONDICIONES ESPECIALES -->
+    <string name="promedio">Promedio</string>
+    <string name="sum">Sumatoria</string>
+    <string name="min">Minimo</string>
+    <string name="max">Maximo</string>
+    <string name="count">Conteo</string>
+
+    <!-- ACTUALIZAR SEGUN GRUPO SOLICITADO -->
+    <string name="actualizar_grupo">Actualizar Grupo</string>
+
+    <!-- DATOS -->
+    <string name="indicacion">A partir de que fecha desea actualizar?</string>
+    <string name="formato_fecha">dd/mm/aaaa</string>
+    <string name="servicio_PHPlocal">Servicio PHP Local</string>
+    <string name="guardar">Guardar</string>
+
+    <!-- DATOS QUE SOLICITAMOS -->
+    <string name="idautor">ID Autor</string>
+    <string name="cod_libro">Codigo Libro</string>
+    <string name="cantidad">Cantidad</string>
+
+    <string name="menu_settings">Settings</string>
+
+</resources>

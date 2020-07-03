@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="caav.parcial3.av12013">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EliminarActivity"></activity>
+        <activity android:name=".ActualizarActivity" />
+        <activity android:name=".ConsultarActivity" />
+        <activity android:name=".IngresarActivity" />
+        <activity android:name=".CountActivity" />
+        <activity android:name=".SumatoriaActivity" />
+        <activity android:name=".MinimoActivity" />
+        <activity android:name=".MaximoActivity" />
+        <activity android:name=".PromedioActivity" />
+        <activity android:name=".ActualizarGrupoActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
