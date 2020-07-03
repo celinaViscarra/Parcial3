@@ -24,29 +24,58 @@
         android:ems="10">
         <requestFocus/>
     </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:text="Numero de partida:" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_numcuenta"
+        android:hint=""
+        android:ems="10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:text="Correlativo:" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_corr"
+        android:hint=""
+        android:ems="10"/>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button1"
             android:onClick="servicioPHP"
             android:text="@string/servicio_PHPlocal"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:text="@string/guardar"
+            android:onClick="guardar"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="Actualizar Partida"
+            android:onClick="updatePartida"/>
     </LinearLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:text="@string/guardar"
-        android:onClick="guardar"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listView1"></ListView>
+
 
 </LinearLayout>

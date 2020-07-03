@@ -15,7 +15,7 @@
     <string name="count">Conteo</string>
 
     <!-- ACTUALIZAR SEGUN GRUPO SOLICITADO -->
-    <string name="actualizar_grupo">Actualizar Grupo</string>
+    <string name="actualizar_grupo">Actualizar</string>
 
     <!-- DATOS -->
     <string name="indicacion">A partir de que fecha desea actualizar?</string>

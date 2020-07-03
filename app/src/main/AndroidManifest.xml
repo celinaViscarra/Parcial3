@@ -10,15 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EliminarActivity"></activity>
-        <activity android:name=".ActualizarActivity" />
-        <activity android:name=".ConsultarActivity" />
-        <activity android:name=".IngresarActivity" />
-        <activity android:name=".CountActivity" />
-        <activity android:name=".SumatoriaActivity" />
-        <activity android:name=".MinimoActivity" />
-        <activity android:name=".MaximoActivity" />
-        <activity android:name=".PromedioActivity" />
         <activity android:name=".ActualizarGrupoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
