@@ -27,7 +27,7 @@ public class ActualizarActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
-        codLibroTxt = (EditText) findViewById(R.id.editText_libro);
+        codLibroTxt = (EditText) findViewById(R.id.editText_codigo);
         cantidadTxt = (EditText) findViewById(R.id.editText_cantidad);
     }
 

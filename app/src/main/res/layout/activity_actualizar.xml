@@ -42,7 +42,7 @@
             <EditText
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:id="@+id/editText_libro"
+                android:id="@+id/editText_codigo"
                 android:ems="10"/>
         </TableRow>
 

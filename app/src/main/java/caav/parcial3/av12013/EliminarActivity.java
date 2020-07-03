@@ -19,7 +19,7 @@ public class EliminarActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         idAutorTxt = (EditText) findViewById(R.id.editText_autor);
-        codLibroTxt = (EditText) findViewById(R.id.editText_libro);
+        codLibroTxt = (EditText) findViewById(R.id.editText_codigo);
     }
 
     public void eliminar(View v){
